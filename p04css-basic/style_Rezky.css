@@ -1,0 +1,35 @@
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+body{
+	width: auto;
+	padding: 100px;
+}
+
+.bag1, .bag2, .bag3{
+	border-radius: 5px;
+	background-color: whitesmoke;
+}
+
+.daftar{
+	width: 100%;
+	height: 25px;
+	padding: 1px 0;
+	background-color: navajowhite;
+	border-radius: 5px;
+	font-family: sans-serif;
+}
+
+.tombol{
+	width: 100%;
+	padding: 5px 0;
+	height: 40px;
+	background-color: white;
+	border: none;
+	color: black;
+	font-size: 18px;
+	border-radius: 20px;
+}

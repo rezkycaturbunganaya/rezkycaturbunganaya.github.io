@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Sliding</title>
+
+    <style>
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-color: whitesmoke;
+ 	background-repeat: no-repeat;
+ 	background-size:cover}
+
+.tombol{
+    background-color: rosybrown;
+    color: white;
+    opacity: 2px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    align-content: center;
+}
+
+.tombol:hover{
+    background-color: pink;
+
+}
+.dalem{
+    padding: 10px;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    text-align: justify;
+}
+.top{
+	align-content: center;
+}
+
+.aku-tengah{
+	background-color: whitesmoke;
+	text-align: center;
+    margin-left: 100px;
+    margin-right: 105px;
+}
+    </style>
+</head>
+<body>
+    <div class="aku-tengah">
+        <div class="top">
+            <div class="tombol">Efek Slide</div>
+        </div>
+        <div class="dalem">NCT 2022: Mark Lee, Lee Haechan, Lee jeno, Na jaemin, Park Jisung, Zong Chenle, Hwang Renjun, Lee Taeyong, Jhonny Suh, Nakamoto Yuta, Jeong Jonwoo, Jeong Jaehyun, Kim Doyoung, Moon Taeil, Sungchan, Shotaro, Kun, Yangyang, Winwin, Hendry, Lucas, Ten, Xiajun</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+	$(document).ready(function(){
+    $(".tombol").click(function(){
+    $(".dalem").slideToggle("slow");
+    });
+});
+
+
+    </script>
+</body>
+</html>
