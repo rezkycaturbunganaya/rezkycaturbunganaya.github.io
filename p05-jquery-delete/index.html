@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>NCT Dream</h1>
+    <div class="tabel">
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Asal Negara</th>
+        <th>Aksi</th>
+      </tr>
+      <tr id="member__1">
+        <td>1</td>
+        <td class="data_anggota">Mark Lee</td>
+        <td class="data_anggota">Canada</td>
+        <td class="hapus" id="hapus__1">Delete</td>
+      </tr>
+      <tr id="member__2">
+        <td>2</td>
+        <td class="data_anggota">Hwang Renjun</td>
+        <td class="data_anggota">China</td>
+        <td class="hapus" id="hapus__2">Delete</td>
+      </tr>
+      <tr id="member__3">
+        <td>3</td>
+        <td class="data_anggota">Lee Jeno</td>
+        <td class="data_anggota">Korea</td>
+        <td class="hapus" id="hapus__3">Delete</td>
+      </tr>
+      <tr id="member__4">
+        <td>4</td>
+        <td class="data_anggota">Na Jaemin</td>
+        <td class="data_anggota">Korea</td>
+        <td class="hapus" id="hapus__4">Delete</td>
+      </tr>
+      <tr id="member__5">
+        <td>5</td>
+        <td class="data_anggota">Zhong Chenle</td>
+        <td class="data_anggota">China</td>
+        <td class="hapus" id="hapus__5">Delete</td>
+      </tr>
+      <tr id="member__6">
+        <td>6</td>
+        <td class="data_anggota">Park Jisung</td>
+        <td class="data_anggota">Korea</td>
+        <td class="hapus" id="hapus__6">Delete</td>
+      </tr>
+      <tr id="member__7">
+        <td>7</td>
+        <td class="data_anggota">Lee Haechan</td>
+        <td class="data_anggota">Korea</td>
+        <td class="hapus" id="hapus__6">Delete</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+</div>
+<a onclick="alert('Kembali ke halaman utama ?')" href="../index.html" class="tombol">Kembali</a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+   
+   <script>
+      $(document).ready(function(){
+        $('.data_anggota').click(function(){
+          let ubah = $(this).text();
+
+          let ubah2 = prompt('Ubah dengan:', ubah);
+          if(!ubah2) return;
+          $(this).text(ubah2);
+
+        })
+      })
+
+    
+        $('.hapus').click(function(){
+        let yakin = confirm('ingin hapus data ini ?');
+          
+        if(!yakin) return;
+
+        let id = $(this).prop('id');
+       // alert(id);
+
+       
+
+       let rid = id.split('__');
+       let baris_ke = rid[1];
+
+       $('#member__'+baris_ke).fadeOut()
+        })
+
+    </script>
+    
+  </body>
+</html>
